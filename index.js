@@ -3,7 +3,8 @@ const express = require('express');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-app.get('*', (req, res) => {
+// Use a middleware handler to avoid parsing the route pattern
+app.use((req, res) => {
 	res.send('this is market place backend');
 });
 

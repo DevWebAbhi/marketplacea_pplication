@@ -1,5 +1,14 @@
 {
+  "name": "marketplace-application",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
   "dependencies": {
     "express": "^5.2.1"
+  },
+  "engines": {
+    "node": ">=14"
   }
 }
